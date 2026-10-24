@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDJPY SMC Trader</title>
+  <style>
+    body {
+      background: #101820;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .card {
+      background: #1c2935;
+      padding: 18px;
+      margin: 14px 0;
+      border-radius: 12px;
+    }
+    h1 { color: #47d7ac; }
+    .value { color: #47d7ac; font-weight: bold; }
+    button {
+      background: #47d7ac;
+      color: #101820;
+      border: none;
+      padding: 13px;
+      width: 100%;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>USDJPY SMC Trader</h1>
+  <p>Demo Trading Dashboard</p>
+
+  <div class="card">
+    <h3>Trading Status</h3>
+    <p>Status: <span class="value">Demo setup only</span></p>
+    <p>Pair: USDJPY</p>
+    <p>Strategy timeframe: M30</p>
+    <p>Market structure: H1</p>
+  </div>
+
+  <div class="card">
+    <h3>Risk Management</h3>
+    <p>Planned risk per trade: 1%</p>
+    <p>Daily loss limit: 3%</p>
+    <p>Account: Exness MT5 Demo</p>
+  </div>
+
+  <div class="card">
+    <h3>Bot Controls</h3>
+    <p id="status">Automatic trading is not connected.</p>
+    <button onclick="document.getElementById('status').textContent='Dashboard active. No trades are being placed.'">
+      Open Dashboard
+    </button>
+  </div>
+
+  <p>Warning: This dashboard does not connect to MT5 or place trades.</p>
+</body>
+</html>
